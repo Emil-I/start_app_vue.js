@@ -1,0 +1,26 @@
+{
+  "name": "start_app_vue",
+  "version": "1.0.0",
+  "description": "starting app for vue.js project",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emil-I/start_app_vue.js.git"
+  },
+  "author": "emill.zuball@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emil-I/start_app_vue.js/issues"
+  },
+  "homepage": "https://github.com/Emil-I/start_app_vue.js#readme",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.0"
+  }
+}
