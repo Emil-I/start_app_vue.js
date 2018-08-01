@@ -9,8 +9,8 @@ module.exports = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',
 
   entry: {
-    admin: ['./admin/app/app.js'],
-    index: ['./index/app/app.js']
+    admin: ['./admin/app/app.module.js'],
+    index: ['./index/app/app.module.js']
   },
   output: {
     path: path.resolve(__dirname, '.dist'),
@@ -50,12 +50,22 @@ module.exports = {
 
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            "presets": [
+              ["env", {
+                "modules": false
+              }],
+              "stage-3"
+            ]
+          }
+        },
+        exclude: /(node_modules|bower_components)/
       },
 
       {
-        test: /\.(png|jpg|jpeg|mp4|ovg|webm|svg|ttf|eot|woff|woff2)(\?.*)?$/,
+        test: /\.(gif|png|jpg|jpeg|mp4|ovg|webm|svg|ttf|eot|woff|woff2)(\?.*)?$/,
         use: [{
           loader: 'url-loader',
           query: {
