@@ -4,8 +4,9 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-module.exports = {
+const config = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',
 
   entry: {
@@ -22,7 +23,8 @@ module.exports = {
   watch: NODE_ENV === 'development',
 
   performance: {
-    hints: NODE_ENV === 'production' ? "warning" : false
+    // hints: NODE_ENV === 'production' ? "warning" : false
+    hints: false
   },
 
   devtool: NODE_ENV === 'production' ? '#source-map' : '#eval-source-map',
@@ -106,6 +108,17 @@ module.exports = {
 
 if (NODE_ENV === 'production') {
   console.log('NODE_ENV = production');
+
+  config.optimization = {
+    minimizer: [
+      new UglifyJsPlugin({
+        sourceMap: true
+      })
+    ]
+  };
+
 } else {
   console.log('NODE_ENV = development');
 }
+
+module.exports = config;

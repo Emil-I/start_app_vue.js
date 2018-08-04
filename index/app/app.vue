@@ -1,5 +1,7 @@
 <template>
-<div id="app" class='my-body' v-bind:class='openModal'>
+<div id="app" class='my-body' style="height: 100vh;" v-bind:class='openModal'>
+
+  <img style="position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;" src="./assets/images/logo.png" alt="">
 
   <header class="header">
     <ul class="header-menu-list">

@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: whitesmoke;
+  font-family: 'megrim';
 }
 
 * {
@@ -87,7 +88,6 @@ h1 {
 }
 
 .modal-frame-form__title {
-  font-family: Biko;
   text-transform: uppercase;
   font-size: 2.4em;
   color: white;
@@ -155,11 +155,15 @@ h1 {
     margin-right: 0;
   }
 }
-
 .header-menu-list__link {
-  color: black;
+  color: white;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
+}
+.modals-close {
+  .header-menu-list__link {
+    color: black;
+  }
 }
 
 .arr-to-bottom-block__wrapper {
