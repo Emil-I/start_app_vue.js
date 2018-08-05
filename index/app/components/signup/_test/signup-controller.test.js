@@ -11,17 +11,17 @@ describe('SignUp', () => {
     //     expect(wrapper.contains('div')).toBe(true);
     // });
 
-    it('is data method', () => {
-        const wrapper = mount(SignUp, {
-            propsData: {
-                titleO: 'titletest'
-            }
-        });
-        expect(typeof wrapper.props().titleO).toBe('titletest');
-    });
-
-    // it('Должен зафейлится', () => {
-    //     expect(true).toBe(true);
+    // it('is data method', () => {
+    //     const wrapper = mount(SignUp, {
+    //         propsData: {
+    //             titleO: 'titletest'
+    //         }
+    //     });
+    //     expect(typeof wrapper.props().titleO).toBe('titletest');
     // });
+
+    it('Должен зафейлится', () => {
+        expect(typeof 'emil').toBe('string');
+    });
 
 });

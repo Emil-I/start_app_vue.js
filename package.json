@@ -14,7 +14,7 @@
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.10",
     "qs": "^6.5.2",
-    "vue": "^2.5.16",
+    "vue": "^2.5.17",
     "vue-axios": "^2.1.2",
     "vue-router": "^3.0.1",
     "vuelidate": "^0.7.4",
@@ -38,17 +38,17 @@
     "node-sass": "^4.9.2",
     "postcss-loader": "^2.1.6",
     "regenerator-runtime": "^0.12.1",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",
     "vue-jest": "^2.6.0",
     "vue-loader": "^14.2.3",
-    "vue-style-loader": "^4.1.0",
+    "vue-style-loader": "^4.1.1",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.16.0",
+    "webpack": "^4.16.4",
     "webpack-cli": "^2.1.5",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.5"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -62,7 +62,6 @@
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
     },
     "moduleNameMapper": {
-      "^@/(.*)$": "<rootDir>/admin/$1",
       "^@/(.*)$": "<rootDir>/index/$1"
     }
   }

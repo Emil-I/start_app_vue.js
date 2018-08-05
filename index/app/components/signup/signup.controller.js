@@ -10,7 +10,7 @@ export default {
 
   props: {
     // title: String,
-    title: 'titletest',
+    title: String,
   },
 
   data: () => {
