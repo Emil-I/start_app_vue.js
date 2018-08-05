@@ -9,7 +9,8 @@ export default {
   name: 'signupFrame',
 
   props: {
-    title: String,
+    // title: String,
+    title: 'titletest',
   },
 
   data: () => {
