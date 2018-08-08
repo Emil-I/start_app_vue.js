@@ -15,4 +15,19 @@
     </div>
 </template>
 
-<script src='./left-menu.controller.js'></script>
+
+<script>
+    'use strict';
+
+export default {
+    name: 'leftMenu',
+
+    data: () => {
+        return {
+            menuTitle: 'Menu'
+        }
+    },
+
+    methods: {}
+}
+</script>

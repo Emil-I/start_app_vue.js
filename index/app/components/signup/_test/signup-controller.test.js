@@ -1,26 +1,23 @@
 import {
-    mount
-} from '@vue/test-utils';
+    shallow
+}from 'vue-test-utils';
 
-import SignUp from '../signup.controller';
+import jsdom from 'jsdom-global';
+jsdom();
 
-describe('SignUp', () => {
 
-    // it('signup registration', () => {
-    //     // expect(vm.$el.querySelector('modal-frame-form__title').textContent).toBe('Sign up');
-    //     expect(wrapper.contains('div')).toBe(true);
-    // });
+//import Vue from 'vue';
+import SignUp from '../signup';
 
-    // it('is data method', () => {
-    //     const wrapper = mount(SignUp, {
-    //         propsData: {
-    //             titleO: 'titletest'
-    //         }
-    //     });
-    //     expect(typeof wrapper.props().titleO).toBe('titletest');
-    // });
+describe('SignUp controller test', () => {
+    const wrapper = shallow(SignUp);
 
-    it('Должен зафейлится', () => {
+    it('has a created hook', () => {
+        expect(typeof SignUp.data).toBe('function');
+    });
+
+
+    it('Не должен зафейлится', () => {
         expect(typeof 'emil').toBe('string');
     });
 

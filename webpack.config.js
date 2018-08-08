@@ -10,8 +10,8 @@ const config = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',
 
   entry: {
-    admin: ['./admin/app/app.module.js'],
-    index: ['./index/app/app.module.js']
+    admin: ['./admin/app/app.js'],
+    index: ['./index/app/app.js']
   },
   output: {
     path: path.resolve(__dirname, '.dist'),

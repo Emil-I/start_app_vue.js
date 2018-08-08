@@ -5,5 +5,23 @@
 </template>
 
 
+<script>
+'use strict';
 
-<script src='./dashboard.controller.js'></script>
+export default {
+    name: 'dashboard',
+
+    data: () => {
+        return {
+            dashboardTitle: 'Dashboard'
+        }
+    },
+
+    props: {},
+
+    methods: {},
+
+    components: {}
+
+}
+</script>

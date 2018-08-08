@@ -5,5 +5,23 @@
 </template>
 
 
+<script>
+'use strict';
 
-<script src='./page-two-test.controller.js'></script>
+export default {
+    name: 'pageTwoTest',
+
+    data: () => {
+        return {
+            dashboardTitle: 'pageTwoTest'
+        }
+    },
+
+    props: {},
+
+    methods: {},
+
+    components: {}
+
+}
+</script>
